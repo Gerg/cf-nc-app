@@ -1,0 +1,5 @@
+---
+applications:
+  - name: cf-nc-app
+    buildpacks:
+      - binary_buildpack
