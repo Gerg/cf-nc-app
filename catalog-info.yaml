@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cf-nc-app
+  description: Ultra-simple Netcat Cloud Foundry App
+  tags:
+    - netcat
+    - cloud-foundry
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'component=cf-nc-app'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: github.com/gerg
