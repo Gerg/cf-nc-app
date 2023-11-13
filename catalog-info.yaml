@@ -8,6 +8,7 @@ metadata:
     - cloud-foundry
   annotations:
     'backstage.io/kubernetes-label-selector': 'component=cf-nc-app'
+    'backstage.tanzu.vmware.com/user.default.bob': 'catalog.entities.read'
 spec:
   type: service
   lifecycle: experimental

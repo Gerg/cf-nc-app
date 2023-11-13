@@ -3,3 +3,6 @@ applications:
   - name: cf-nc-app
     buildpacks:
       - binary_buildpack
+    metadata:
+      annotations:
+        'backstage.io/kubernetes-label-selector': 'app=cf-nc-app'
