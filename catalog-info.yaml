@@ -1,15 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: cf-nc-app
-  description: Ultra-simple Netcat Cloud Foundry App
+  name: tas-test-app
+  description: Sample Tanzu Application
   tags:
-    - netcat
     - cloud-foundry
   annotations:
-    'backstage.io/kubernetes-label-selector': 'component=cf-nc-app'
-    'backstage.tanzu.vmware.com/user.default.bob': 'catalog.entities.read'
+    'backstage.tanzu.vmware.com/user.default.tas-test-user': 'catalog.entities.read'
+    'backstage.tanzu.vmware.com/group.default.tas-test-group': 'catalog.entities.read'
 spec:
   type: service
   lifecycle: experimental
-  owner: github.com/gerg
+  owner: user:default/tas-owning-user
